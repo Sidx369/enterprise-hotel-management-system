@@ -1,6 +1,9 @@
 <Solution>
   <Folder Name="/docs/">
     <File Path="docs/Architecture.md" />
+    <File Path="docs/CodingStandards.md" />
+    <File Path="docs/Files.md" />
+    <File Path="docs/Progress.md" />
   </Folder>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />

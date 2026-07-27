@@ -1,15 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
-	<!-- Explicitly pin the transitive layer to overwrite the 2.0.0 vulnerability -->
-	<PackageReference Include="Microsoft.OpenApi" Version="2.7.6" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi"/>
+	<PackageReference Include="Microsoft.OpenApi"/>
   </ItemGroup>
 
   <ItemGroup>
