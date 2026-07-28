@@ -6,6 +6,10 @@ namespace HotelManagement.Domain.Common
 {
     public abstract class BaseEntity
     {
+        protected BaseEntity()
+        {
+            
+        }
         public Guid Id { get; protected set; }
     }
 }

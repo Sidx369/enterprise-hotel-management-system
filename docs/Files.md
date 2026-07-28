@@ -40,10 +40,10 @@ Legend
 
 | File | Status |
 |------|--------|
-| BaseEntity.cs | ⏳ |
-| AggregateRoot.cs | ⏳ |
-| AuditableEntity.cs | ⏳ |
-| ValueObject.cs | ⏳ |
+| BaseEntity.cs | ✅ |
+| AggregateRoot.cs | ✅ |
+| AuditableEntity.cs | ✅ |
+| ValueObject.cs | ✅ |
 
 ---
 
@@ -51,8 +51,8 @@ Legend
 
 | File | Status |
 |------|--------|
-| Address.cs | ⏳ |
-| Money.cs | ⏳ |
+| Address.cs | ✅ |
+| Money.cs | ✅ |
 
 ---
 
@@ -82,8 +82,8 @@ Legend
 
 | File | Status |
 |------|--------|
-| DomainException.cs | ⏳ |
-| BookingException.cs | ⏳ |
+| DomainException.cs | ✅ |
+| BookingException.cs | ✅ |
 
 ---
 
