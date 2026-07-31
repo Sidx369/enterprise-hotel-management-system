@@ -44,6 +44,7 @@ Legend
 | AggregateRoot.cs | ✅ |
 | AuditableEntity.cs | ✅ |
 | ValueObject.cs | ✅ |
+| Guard.cs | ✅ |
 
 ---
 
@@ -72,9 +73,9 @@ Legend
 
 | File | Status |
 |------|--------|
-| BookingStatus.cs | ⏳ |
-| RoomStatus.cs | ⏳ |
-| UserRole.cs | ⏳ |
+| BookingStatus.cs | ✅ |
+| RoomStatus.cs | ✅ |
+| UserRole.cs | ✅ |
 
 ---
 
@@ -91,13 +92,13 @@ Legend
 
 | File | Status |
 |------|--------|
-| IRepository.cs | ⏳ |
-| IHotelRepository.cs | ⏳ |
-| IRoomRepository.cs | ⏳ |
-| IRoomTypeRepository.cs | ⏳ |
-| ICustomerRepository.cs | ⏳ |
-| IBookingRepository.cs | ⏳ |
-| IUnitOfWork.cs | ⏳ |
+| IRepository.cs | ✅ |
+| IHotelRepository.cs | ✅ |
+| IRoomRepository.cs | ✅ |
+| IRoomTypeRepository.cs | ✅ |
+| ICustomerRepository.cs | ✅ |
+| IBookingRepository.cs | ✅ |
+| IUnitOfWork.cs | ✅ |
 
 ---
 

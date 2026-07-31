@@ -10,8 +10,12 @@ namespace HotelManagement.Domain.Enums
 
         Occupied = 2,
 
-        Cleaning = 3,
+        Reserved = 3,
 
-        Maintenance = 4
+        Cleaning = 4,
+
+        Maintenance = 5,
+
+        OutOfService = 6
     }
 }

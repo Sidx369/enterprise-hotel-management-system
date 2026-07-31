@@ -4,7 +4,7 @@
 
 ## Current Sprint
 
-**Sprint 1.2**
+**Sprint 2.2**
 
 Documentation
 
@@ -16,7 +16,7 @@ Documentation
 |--------|--------|
 | Repository Setup | ✅ Complete |
 | Documentation | 🔄 In Progress |
-| Domain | ⏳ |
+| Domain | 🔄 In Progress |
 | Application | ⏳ |
 | Infrastructure | ⏳ |
 | API | ⏳ |
@@ -37,20 +37,37 @@ Documentation
 - .gitignore
 - Directory.Build.props
 - Directory.Packages.props
+- Added Guard.cs
+- Added Domain exception hierarchy
+- Added Value Objects
+- Added base entity infrastructure
+- Implemented domain repository interfaces:
+  - IRepository
+  - IUnitOfWork
+  - IHotelRepository
+  - IRoomRepository
+  - ICustomerRepository
+  - IRoomTypeRepository
+  - IBookingRepository
 
 ---
 
 # Current Goal
 
-Complete repository documentation.
+Implement domain entities:
+- Hotel
+- Room
+- RoomType
+- Customer
+- Booking
 
 ---
 
 # Next Sprint
 
-Sprint 2.0
+Sprint 2.3
 
-Create solution and projects.
+Implement aggregate root
 
 ---
 
