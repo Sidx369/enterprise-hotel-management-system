@@ -33,7 +33,7 @@ namespace HotelManagement.Domain.Common
         {
             if (value < 0)
             {
-                throw new DomainException($"{parameterName} cannot be nagative.");
+                throw new DomainException($"{parameterName} cannot be negative.");
             }
         }
 
@@ -48,6 +48,41 @@ namespace HotelManagement.Domain.Common
                 throw new DomainException(
                     $"{parameterName} must be between {minimum} and {maximum}.");
             }
+        }
+
+        public static void AgainstMaxLength(
+            string value,
+            int maxLength,
+            string parameterName)
+        {
+            if (value.Length > maxLength)
+                throw new DomainException($"{parameterName} cannot exceed {maxLength} characters.");
+        }
+
+        public static void AgainstInvalidEmail(
+            string? email,
+            string parameterName)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+                return;
+
+            try
+            {
+                _ = new System.Net.Mail.MailAddress(email);
+            }
+            catch
+            {
+                throw new DomainException(
+                    $"{parameterName} is not a valid email address.");
+            }
+        }
+
+        public static void AgainstEmptyGuid(
+            Guid value,
+            string parameterName)
+        {
+            if (value == Guid.Empty)
+                throw new DomainException($"{parameterName} cannot be an empty Guid.");
         }
     }
 }

@@ -4,7 +4,7 @@
 
 ## Current Sprint
 
-**Sprint 2.2**
+**Sprint 2.7**
 
 Documentation
 
@@ -49,25 +49,36 @@ Documentation
   - ICustomerRepository
   - IRoomTypeRepository
   - IBookingRepository
+- Added HotelDetails value object
+- Encapsulated hotel descriptive information
+- Centralized hotel validation within HotelDetails
+- Added domain event infrastructure
+- Added HotelDetails value object
+- Finalized AggregateRoot base class
+- Simplified Hotel aggregate responsibilities
+- Removed room lifecycle management from Hotel aggregate
+- Implemented RoomType aggregate root.
+- Implemented Room aggregate root.
+- Added rich domain behavior for room lifecycle.
+- Added PersonName Value Object.
+- Implemented Customer aggregate.
+
 
 ---
 
 # Current Goal
 
-Implement domain entities:
-- Hotel
-- Room
-- RoomType
-- Customer
-- Booking
+Complete Domain
 
 ---
 
 # Next Sprint
 
-Sprint 2.3
+Sprint 2.8
 
-Implement aggregate root
+- Add DomainErrors
+- Improve AggregateRoot
+- Domain Errors
 
 ---
 

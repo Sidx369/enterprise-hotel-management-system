@@ -41,10 +41,11 @@ Legend
 | File | Status |
 |------|--------|
 | BaseEntity.cs | ✅ |
+| IDomainEvent.cs | ✅ |
 | AggregateRoot.cs | ✅ |
-| AuditableEntity.cs | ✅ |
+| AuditableEntity.cs | 🔄 |
 | ValueObject.cs | ✅ |
-| Guard.cs | ✅ |
+| Guard.cs | 🔄 |
 
 ---
 
@@ -54,6 +55,8 @@ Legend
 |------|--------|
 | Address.cs | ✅ |
 | Money.cs | ✅ |
+| HotelDetails.cs | ✅ |
+| PersonName.cs | ✅ |
 
 ---
 
@@ -61,11 +64,11 @@ Legend
 
 | File | Status |
 |------|--------|
-| Hotel.cs | ⏳ |
-| Room.cs | ⏳ |
-| RoomType.cs | ⏳ |
-| Customer.cs | ⏳ |
-| Booking.cs | ⏳ |
+| Hotel.cs | ✅ |
+| RoomType.cs | ✅ |
+| Room.cs | ✅ |
+| Customer.cs | ✅ |
+| Booking.cs | ✅ |
 
 ---
 

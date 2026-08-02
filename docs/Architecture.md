@@ -219,6 +219,25 @@ Future:
 
 ---
 
+Every Entity Must Follow This Checklist:
+
+- XML documentation
+- Constructor validation only once
+- No duplicated validation logic
+- Private setters
+- Private backing collections
+- Domain methods only (no anemic models)
+- Guard clauses
+- Immutable value objects
+- No magic strings/numbers
+- CancellationToken on async APIs (outside entities)
+- No infrastructure dependencies
+- EF Core compatible
+- Nullable reference types enabled
+- Consistent namespace and file layout
+
+---
+
 # Value Objects
 
 - Address

@@ -201,6 +201,34 @@ Internal implementation details generally do not require XML documentation.
 
 ---
 
+# File Layout
+
+Every file will use the same order:
+
+```csharp
+using ...
+
+namespace ...
+
+/// XML Docs
+
+public sealed class ...
+
+Fields
+
+Constants
+
+Properties
+
+Constructors
+
+Public Methods
+
+Private Methods
+```
+
+---
+
 # Exception Handling
 
 Throw specific exceptions.
