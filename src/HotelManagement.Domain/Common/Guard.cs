@@ -84,5 +84,20 @@ namespace HotelManagement.Domain.Common
             if (value == Guid.Empty)
                 throw new DomainException($"{parameterName} cannot be an empty Guid.");
         }
+
+        public static void AgainstOutOfRange<T>(
+            T value,
+            T minimum,
+            T maximum,
+            string parameterName)
+            where T : IComparable<T>
+        {
+            if(value.CompareTo(minimum) < 0 || 
+                value.CompareTo(maximum) > 0)
+            {
+                throw new DomainException(
+                    $"{parameterName} must be between {minimum} and {maximum}");
+            }
+        }
     }
 }

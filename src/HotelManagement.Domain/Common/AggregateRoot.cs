@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HotelManagement.Domain.Events;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
@@ -11,13 +12,14 @@ namespace HotelManagement.Domain.Common;
 /// </summary>
 public abstract class AggregateRoot : BaseEntity
 {
-    private readonly List<IDomainEvent> _domainEvents = [];
+    private List<IDomainEvent>? _domainEvents;
     public IReadOnlyCollection<IDomainEvent> DomainEvents
-        => new ReadOnlyCollection<IDomainEvent>(_domainEvents);
+        => _domainEvents?.AsReadOnly() ?? Array.Empty<IDomainEvent>().AsReadOnly();
 
     protected void AddDomainEvent(IDomainEvent domainEvent)
     {
         Guard.AgainstNull(domainEvent, nameof(domainEvent));
+        _domainEvents ??= [];
 
         _domainEvents.Add(domainEvent);
     }

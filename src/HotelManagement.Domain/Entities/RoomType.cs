@@ -37,7 +37,7 @@ public sealed class RoomType : AuditableEntity
             Guard.AgainstMaxLength(description, DescriptionMaxLength, nameof(description));
         }
 
-        Id = Guid.NewGuid();
+        Id = Guid.CreateVersion7();
         Name = name;
         Description = description;
         MaxOccupancy = maxOccupancy;

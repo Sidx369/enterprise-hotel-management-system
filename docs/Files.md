@@ -42,10 +42,10 @@ Legend
 |------|--------|
 | BaseEntity.cs | ✅ |
 | IDomainEvent.cs | ✅ |
-| AggregateRoot.cs | ✅ |
-| AuditableEntity.cs | 🔄 |
+| AggregateRoot.cs | ✅ Updated |
+| AuditableEntity.cs | ✅ |
 | ValueObject.cs | ✅ |
-| Guard.cs | 🔄 |
+| Guard.cs | ✅ |
 
 ---
 
@@ -57,6 +57,7 @@ Legend
 | Money.cs | ✅ |
 | HotelDetails.cs | ✅ |
 | PersonName.cs | ✅ |
+| BookingPeriod.cs | ✅ |
 
 ---
 
@@ -79,6 +80,22 @@ Legend
 | BookingStatus.cs | ✅ |
 | RoomStatus.cs | ✅ |
 | UserRole.cs | ✅ |
+
+---
+
+## Errors
+
+| File | Status |
+|------|--------|
+| DomainErrors.cs | ✅ |
+
+---
+
+## Events
+
+| File | Status |
+|------|--------|
+| BookingCreatedDomainEvent.cs | ✅ |
 
 ---
 
@@ -107,7 +124,37 @@ Legend
 
 # Application
 
-Pending
+## Common
+
+### Pagination
+
+| File | Status |
+|------|--------|
+| PagedResult.cs | ✅ |
+| PagingParameters.cs | ✅ |
+
+---
+
+| File | Status |
+|------|--------|
+| CreateHotelDto.cs | ⏳ |
+| UpdateHotelDto.cs | ⏳ |
+| HotelDto.cs | ⏳ |
+| HotelFilter.cs | ⏳ |
+| CreateRoomDto.cs | ⏳ |
+| UpdateRoomDto.cs | ⏳ |
+| RoomDto.cs | ⏳ |
+| RoomFilter.cs | ⏳ |
+| CreateCustomerDto.cs | ⏳ |
+| UpdateCustomerDto.cs | ⏳ |
+| CustomerDto.cs | ⏳ |
+| CustomerFilter.cs | ⏳ |
+| CreateBookingDto.cs | ⏳ |
+| BookingDto.cs | ⏳ |
+| ConfirmBookingRequest.cs | ⏳ |
+| CancelBookingRequest.cs | ⏳ |
+| CheckInBookingRequest.cs | ⏳ |
+| CheckOutBookingRequest.cs | ⏳ |
 
 ---
 

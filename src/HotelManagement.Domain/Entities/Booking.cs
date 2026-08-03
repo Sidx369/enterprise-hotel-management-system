@@ -1,5 +1,7 @@
 ﻿using HotelManagement.Domain.Common;
 using HotelManagement.Domain.Enums;
+using HotelManagement.Domain.Errors;
+using HotelManagement.Domain.Events.Booking;
 using HotelManagement.Domain.Exceptions;
 using HotelManagement.Domain.ValueObjects;
 using System;
@@ -58,6 +60,14 @@ public sealed class Booking : AuditableEntity
         TotalAmount = totalAmount;
         SpecialRequests = specialRequests;
         Status = BookingStatus.Pending;
+
+        // Raise the event ONLY AFTER the aggregate is fully initialized.
+        AddDomainEvent(new BookingCreatedDomainEvent(
+            Id,
+            RoomId,
+            CustomerId,
+            BookingPeriod,
+            TotalAmount));
     }
 
     public Guid RoomId { get; private set; }
@@ -77,8 +87,7 @@ public sealed class Booking : AuditableEntity
     public void Confirm()
     {
         if (Status != BookingStatus.Pending)
-            throw new DomainException(
-                "Only pending booknig can be confirmed.");
+            throw new DomainException(DomainErrors.Booking.OnlyPendingCanBeConfirmed);
 
         Status = BookingStatus.Confirmed;
     }
@@ -87,8 +96,7 @@ public sealed class Booking : AuditableEntity
     {
         if (Status == BookingStatus.CheckedOut)
         {
-            throw new DomainException(
-                "A checked-out booking cannot be cancelled.");
+            throw new DomainException(DomainErrors.Booking.CheckedOutCannotBeCancelled);
         }
 
         Status = BookingStatus.Cancelled;
@@ -98,8 +106,7 @@ public sealed class Booking : AuditableEntity
     {
         if (Status != BookingStatus.Confirmed)
         {
-            throw new DomainException(
-                "Only confirmed bookings can be checked in.");
+            throw new DomainException(DomainErrors.Booking.OnlyConfirmedCanCheckIn);
         }
 
         Status = BookingStatus.CheckedIn;
@@ -109,8 +116,7 @@ public sealed class Booking : AuditableEntity
     {
         if (Status != BookingStatus.CheckedIn)
         {
-            throw new DomainException(
-                "Only checked-in bookings can be checked out.");
+            throw new DomainException(DomainErrors.Booking.OnlyCheckedInCanCheckOut);
         }
 
         Status = BookingStatus.CheckedOut;

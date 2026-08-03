@@ -21,7 +21,7 @@ public sealed class Hotel : AuditableEntity
     {
         Guard.AgainstNull(details, nameof(details));
 
-        Id = Guid.NewGuid();
+        Id = Guid.CreateVersion7();
         Details = details;
         IsActive = true;
     }

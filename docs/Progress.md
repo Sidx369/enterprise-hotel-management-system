@@ -4,7 +4,7 @@
 
 ## Current Sprint
 
-**Sprint 2.7**
+**Sprint 3.1**
 
 Documentation
 
@@ -62,23 +62,27 @@ Documentation
 - Added rich domain behavior for room lifecycle.
 - Added PersonName Value Object.
 - Implemented Customer aggregate.
-
-
+- Introduced DomainErrors for centralized domain error messages.
+- Enhanced Guard with generic range validation.
+- Added AgainstEmptyGuid validation.
+- Standardized aggregate identifier strategy to Guid Version 7.
+- Added first concrete domain event.
+- Switched Application layer to Feature Module (Vertical Slice) organization.
+- Added generic PagedResult<T>.
+- Added PagingParameters base class.
+- 
 ---
 
 # Current Goal
 
-Complete Domain
+- Began Application layer.
 
 ---
 
 # Next Sprint
 
-Sprint 2.8
+Sprint 3.2
 
-- Add DomainErrors
-- Improve AggregateRoot
-- Domain Errors
 
 ---
 

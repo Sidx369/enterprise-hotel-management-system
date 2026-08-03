@@ -45,7 +45,7 @@ public sealed class Room : AuditableEntity
             (short)20,
             nameof(maximumOccupancy));
 
-        Id = Guid.NewGuid();
+        Id = Guid.CreateVersion7();
         HotelId = hotelId;
         RoomTypeId = roomTypeId;
         RoomNumber = roomNumber;

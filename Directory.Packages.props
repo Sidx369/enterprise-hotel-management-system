@@ -1,19 +1,16 @@
 <Project>
-
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
-
   <ItemGroup>
-
     <!-- Packages will be added here as we introduce them -->
-	  <PackageVersion Include="coverlet.collector" Version="6.0.4" />
-	  <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
-	  <PackageVersion Include="xunit" Version="2.9.3" />
-	  <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
-	  <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
-	  <!-- Explicitly pin the transitive layer to overwrite the 2.0.0 vulnerability -->
-	  <PackageVersion Include="Microsoft.OpenApi" Version="2.7.6" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.4" />
+    <PackageVersion Include="MediatR.Contracts" Version="2.0.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
+    <!-- Explicitly pin the transitive layer to overwrite the 2.0.0 vulnerability -->
+    <PackageVersion Include="Microsoft.OpenApi" Version="2.7.6" />
   </ItemGroup>
-
 </Project>
