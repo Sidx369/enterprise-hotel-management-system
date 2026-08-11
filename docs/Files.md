@@ -126,6 +126,14 @@ Legend
 
 ## Common
 
+### Models
+
+| File | Status |
+|------|--------|
+| AddressModel.cs | ✅ |
+
+---
+
 ### Pagination
 
 | File | Status |
@@ -135,12 +143,51 @@ Legend
 
 ---
 
+## Features
+
+### Hotels
+
+#### Contracts
+
 | File | Status |
 |------|--------|
-| CreateHotelDto.cs | ⏳ |
-| UpdateHotelDto.cs | ⏳ |
-| HotelDto.cs | ⏳ |
-| HotelFilter.cs | ⏳ |
+| HotelFilter.cs | ✅ |
+| CreateHotelRequest.cs | ✅ |
+| UpdateHotelRequest.cs | ✅ |
+| HotelResponse.cs | ✅ |
+| IHotelRequest.cs | ✅ |
+
+---
+
+#### Interfaces
+
+| File | Status |
+|------|--------|
+| IHotelService.cs | ✅ |
+
+---
+
+#### Mapping
+
+| File | Status |
+|------|--------|
+| HotelMappingProfile.cs | ✅ |
+
+---
+
+#### Validators
+
+| File | Status |
+|------|--------|
+| HotelValidationExtensions.cs | ✅ |
+| CreateHotelRequestValidator.cs | ✅ |
+| UpdateHotelRequestValidator.cs | ✅ |
+
+---
+
+- Others
+| File | Status |
+|------|--------|
 | CreateRoomDto.cs | ⏳ |
 | UpdateRoomDto.cs | ⏳ |
 | RoomDto.cs | ⏳ |

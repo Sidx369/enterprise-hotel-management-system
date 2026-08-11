@@ -15,5 +15,21 @@ namespace HotelManagement.Domain.Interfaces
         Task<bool> ExistsByNameAsync(
             string name,
             CancellationToken cancellationToken= default);
+
+        Task<IReadOnlyList<Hotel>> GetPagedAsync(
+            string? name,
+            string? city,
+            bool? isActive,
+            string? sortBy,
+            bool descending,
+            int skip,
+            int take,
+            CancellationToken cancellationToken = default);
+
+        Task<int> CountAsync(
+            string? name,
+            string? city,
+            bool? isActive,
+            CancellationToken cancellationToken = default);
     }
 }

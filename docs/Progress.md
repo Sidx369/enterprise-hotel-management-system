@@ -4,9 +4,7 @@
 
 ## Current Sprint
 
-**Sprint 3.1**
-
-Documentation
+**Sprint 3.4**
 
 ---
 
@@ -70,7 +68,11 @@ Documentation
 - Switched Application layer to Feature Module (Vertical Slice) organization.
 - Added generic PagedResult<T>.
 - Added PagingParameters base class.
-- 
+- Added hotel request validators.
+- Added IHotelService.
+- Added shared IHotelRequest contract for reusable FluentValidation rules.
+
+
 ---
 
 # Current Goal
@@ -81,7 +83,7 @@ Documentation
 
 # Next Sprint
 
-Sprint 3.2
+Sprint 3.3
 
 
 ---
