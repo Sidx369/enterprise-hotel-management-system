@@ -4,7 +4,7 @@
 
 ## Current Sprint
 
-**Sprint 3.4**
+**Sprint 4.1 — Hotel Infrastructure**
 
 ---
 
@@ -15,8 +15,8 @@
 | Repository Setup | ✅ Complete |
 | Documentation | 🔄 In Progress |
 | Domain | 🔄 In Progress |
-| Application | ⏳ |
-| Infrastructure | ⏳ |
+| Application | 🔄 In Progress |
+| Infrastructure | 🔄 In Progress |
 | API | ⏳ |
 | Authentication | ⏳ |
 | Testing | ⏳ |
@@ -71,20 +71,31 @@
 - Added hotel request validators.
 - Added IHotelService.
 - Added shared IHotelRequest contract for reusable FluentValidation rules.
-
-
+- Implemented HotelService.
+- Added application-level NotFoundException.
+- Added application-level ConcurrencyException.
+- Added optimistic concurrency validation to hotel updates.
+- Added RowVersion to UpdateHotelRequest.
+- EF Core DbContext
+- Hotel repository implementation
+- Unit of Work implementation
+- 
 ---
 
 # Current Goal
 
-- Began Application layer.
+- Complete Hotel persistence infrastructure
 
 ---
 
 # Next Sprint
 
-Sprint 3.3
-
+Sprint 4.2
+Implement and configure the remaining aggregates in Infrastructure:
+- RoomType
+- Room
+- Customer
+- Booking
 
 ---
 

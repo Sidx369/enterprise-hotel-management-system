@@ -126,6 +126,15 @@ Legend
 
 ## Common
 
+### Exceptions
+
+| File | Status |
+|------|--------|
+| NotFoundException.cs | ✅ |
+| ConcurrencyException.cs | ✅ |
+
+---
+
 ### Models
 
 | File | Status |
@@ -175,6 +184,14 @@ Legend
 
 ---
 
+#### Services
+
+| File | Status |
+|------|--------|
+| HotelService.cs | ✅ |
+
+---
+
 #### Validators
 
 | File | Status |
@@ -207,7 +224,34 @@ Legend
 
 # Infrastructure
 
-Pending
+| File | Status |
+|------|--------|
+| DependencyInjection.cs | ✅ |
+
+---
+
+## Persistence
+
+| File | Status |
+|------|--------|
+| HotelManagementDbContext.cs | ✅ |
+| UnitOfWork.cs | ✅ |
+
+---
+
+### Configurations
+
+| File | Status |
+|------|--------|
+| HotelConfiguration.cs | ✅ |
+
+---
+
+### Repositories
+
+| File | Status |
+|------|--------|
+| HotelRepository.cs | ✅ |
 
 ---
 

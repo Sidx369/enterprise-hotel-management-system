@@ -16,4 +16,10 @@ public sealed class UpdateHotelRequest : IHotelRequest
     public string? PhoneNumber { get; init; }
     public required AddressModel Address { get; init; }
     public int StarRating { get; init; }
+
+    /// <summary>
+    /// Version of the hotel that the client originally read.
+    /// Used for optimistic concurrency.
+    /// </summary>
+    public required byte[] RowVersion { get; init; }
 }

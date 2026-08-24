@@ -15,5 +15,9 @@ public sealed class UpdateHotelRequestValidator
     public UpdateHotelRequestValidator()
     {
         this.ApplyCommonHotelRules();
+
+        RuleFor(x => x.RowVersion)
+            .NotNull()
+            .NotEmpty();
     }
 }
