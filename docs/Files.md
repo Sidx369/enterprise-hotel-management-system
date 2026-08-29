@@ -244,6 +244,7 @@ Legend
 | File | Status |
 |------|--------|
 | HotelConfiguration.cs | ✅ |
+| RoomTypeConfiguration.cs | ✅ |
 
 ---
 
@@ -252,6 +253,7 @@ Legend
 | File | Status |
 |------|--------|
 | HotelRepository.cs | ✅ |
+| RoomTypeRepository.cs | ✅ |
 
 ---
 

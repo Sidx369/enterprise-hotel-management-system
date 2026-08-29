@@ -79,23 +79,29 @@
 - EF Core DbContext
 - Hotel repository implementation
 - Unit of Work implementation
+- Implemented RoomTypeRepository.
 - 
 ---
 
 # Current Goal
 
-- Complete Hotel persistence infrastructure
+- Complete RoomType persistence infrastructure
 
 ---
 
 # Next Sprint
 
-Sprint 4.2
-Implement and configure the remaining aggregates in Infrastructure:
-- RoomType
-- Room
-- Customer
-- Booking
+Sprint 4.3
+
+Implement and configure Room persistence:
+- Room DbSet
+- RoomConfiguration
+- Money value object persistence
+- RoomRepository
+- HotelId relationship
+- RoomTypeId relationship
+- Room-specific queries
+- Room concurrency
 
 ---
 

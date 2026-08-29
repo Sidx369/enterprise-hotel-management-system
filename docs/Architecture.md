@@ -209,11 +209,6 @@ Future:
 - Hotel
 - Booking
 - Customer
-
----
-
-# Child Entities
-
 - Room
 - RoomType
 

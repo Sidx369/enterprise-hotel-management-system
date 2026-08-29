@@ -20,6 +20,8 @@ public sealed class HotelManagementDbContext : DbContext
 
     public DbSet<Hotel> Hotels => Set<Hotel>();
 
+    public DbSet<RoomType> RoomTypes => Set<RoomType>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
